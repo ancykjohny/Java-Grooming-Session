@@ -1,0 +1,79 @@
+//Given a string (s) and non negative integer (n) apply the following rules.
+1.	    Display the first three characters as front.
+2.	    If the length of the string is less than 3, then consider the entire string as front and repeat it n times.
+
+import java.util.Scanner;
+public class Sequence{
+  public static void main(String args[]) {
+    System.out.println("enter the string and number");
+      Scanner sc = new Scanner(System.in);
+      String s =sc.next();
+    int n = sc.nextInt();
+     char c[] = s.toCharArray();
+     if(c.length<3){
+      String sb1=new StringBuilder().append(s.charAt(0))
+                 .append(s.charAt(1))
+                 .toString();
+        int i;
+        for(i=0;i<n;i++){
+      System.out.println(sb1);
+  }}
+     else{
+    String sb=new StringBuilder().append(s.charAt(0))
+                   .append(s.charAt(1))
+                   .append(s.charAt(2))
+                   .toString();
+      int i;
+    for(i=0;i<n;i++){
+     System.out.println(sb);
+     //System.out.println(c[1]);
+     //System.out.println(c[2]);
+    }
+  
+  }}}
+    
+//   Write a program to read a number , calculate the sum of odd digits (values) present in the given number. 
+ 
+   import static java.lang.Double.sum;
+import static java.lang.Integer.sum;
+import java.util.Scanner;
+
+public class Sumodd{
+  public static void main(String args[]) {
+    System.out.println("enter the number");
+      Scanner sc = new Scanner(System.in);
+      int n = sc.nextInt();
+       int  sum=0;
+         while(n>0){
+      int r = n%10;
+       
+         if(r%2==0){
+             n=n/10;
+             continue;
+         
+    }
+         else{
+            sum = sum+r;
+        n = n/10;
+        
+         }
+          
+
+  }
+        System.out.println(sum);
+}}   
+
+import java.util.Scanner;
+
+public class Tendigit{
+  public static void main(String args[]) {
+    System.out.println("enter the number");
+      Scanner sc = new Scanner(System.in);
+      int n = sc.nextInt();
+      String s1= Integer.toString(n);
+    if(s1.matches("[0-9]{3}[-]{1}[0-9]{3}[-]{1}[0-9]{4}")){
+      System.out.println("Valid number format");
+    }else{
+      System.out.println("Invalid number format");
+
+  }}  
