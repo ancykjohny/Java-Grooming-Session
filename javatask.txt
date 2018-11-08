@@ -1,0 +1,78 @@
+//Fetching Middle Characters from String 
+Write a program to read a string of even length and to fetch two middle most characters from the input string and return it as string output. 
+
+import java.util.Scanner;
+class Middle{
+ public static void main(String[]args){
+     System.out.println("Enter the string");
+     Scanner sc= new Scanner(System.in);
+     String str=sc.next();
+     int l,p;
+     if(str.length()%2==0)
+     {
+         p=str.length()/2-1;
+                 l=2;
+     }
+     else {
+     p=str.length()/2;
+     l=1;
+                 
+     }  
+     String op=str.substring(p, p+l);
+     System.out.println("middle of the string= "+op);
+     
+}   
+}
+
+Sum of Squares of Even Digits 
+
+
+
+import java.util.Scanner;
+
+class Square{
+    public static void main(String[]args){
+        System.out.println("Enter the number");
+        Scanner sc =new Scanner(System.in);
+        int n=sc.nextInt();
+        int n1 = 0;
+        int n2=0;
+        while(n>0){
+         
+    
+    n1=n%10;
+    if((n1%2)==0)
+    n2+=n1*n1;
+    n=n/10;
+    }
+   System.out.println(n2);
+}
+}
+                
+          
+   System.out.println(n1);
+    }}
+
+//Write a program to read a string and return an integer based on the following rules.
+If the first word and the last word in the String match, then return the number of characters in the word else return sum of the characters in both words. Assume the Strings to be case - sensitive.
+
+import java.util.Scanner;
+
+class Matches{
+    public static void main(String[]args){
+        System.out.println("enter the string");
+        Scanner sc= new Scanner(System.in);
+        String str=sc.next();
+        String[] str1=str.split(" ");
+      int len=str1.length-1;
+            if(str1[0].equals(str1[len])){
+                System.out.println(str1[0].length());
+            }
+           else{
+                String str3 = null;
+               str3=str1[0].length()+str1[len];
+               System.out.println(str3);
+            }
+        
+}
+}
