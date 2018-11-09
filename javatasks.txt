@@ -1,0 +1,67 @@
+//Two input strings are accepted. If the two strings are of same length concat them and return, if they are not of same length, reduce the longer string to size of smaller one, and concat them
+
+import java.util.Scanner;
+class concatstr{
+    public static void main(String[]args){
+    System.out.println("enter  the 2 strings");
+    Scanner sc = new Scanner(System.in);
+    String s1=sc.next();
+    String s2=sc.next();
+    if(s1.length()==s2.length())
+        {
+            String s3=s1.concat(s2);
+          System.out.println(s3);
+        }
+    else{
+        String s4 = s1.substring(0,Math.min(s1.length(),s2.length()));
+        System.out.println(s4);
+    } 
+       
+}
+}
+Check whether a given string is palindrome also check whether it has atleast 2 different vowels
+
+import java.util.Scanner;
+class Palliandrome{
+    public static void main(String[]args){
+    System.out.println("enter  the string");
+    Scanner sc = new Scanner(System.in);
+     String  s1=sc.nextLine();
+     String s2 = "";
+     String s3 = "";
+     int len=s1.length();
+     for( int i=len-1;i>=0;i--){
+     s2 = s2+ s1.charAt(i);
+    }
+    
+    if(s1.equals (s2)){
+        System.out.println("palliandrome");
+    
+        
+    }
+    else{
+         System.out.println(" not palliandrome");
+    }
+
+Find no of characters in a given string which are not repeated.
+import java.util.Scanner;
+import java.util.Scanner;
+class Norepeat{
+    public static void main(String[]args){
+    System.out.println("enter  the string");
+    Scanner sc = new Scanner(System.in);
+     String  s1=sc.nextLine();
+        int c =0;
+        char[] c1 = s1.toCharArray();
+     int len=s1.length()-1;
+     for(int i=0;i<=len;i++){
+       for(int j=i+1;j<=len;j++){
+           if(c1[i]!=c1[j]){
+              c =c+1;
+           }
+           }
+        
+       }
+    System.out.println(c);
+    }
+}
