@@ -1,0 +1,54 @@
+2)Write a program to identify common elements or numbers between
+two given arrays.
+import java.util.Scanner;
+
+class Test{
+    public static void main(String[]args){
+        System.out.println("enter two arrays");
+        int i,j,k;
+    int a[]=new int[4];
+    int b[]=new int[4];
+    int c[]=new int[4];
+    Scanner sc= new Scanner (System.in);
+    for( i=0;i<a.length-1;i++){
+            a[i]=sc.nextInt();
+    }
+    for(j=0;j<b.length-1;j++){
+            b[j]=sc.nextInt();
+    }
+   if(a[i]==b[j]){
+        for(k=0;k<c.length-1;k++){
+         //c[k]=sc.nextInt();
+   
+   
+  
+    c[k]=b[j];
+      
+
+    
+    
+    
+   System.out.println(c[k]);   
+             
+    }
+    }}}
+1)Given an array C of size N-1 and given that there are numbers from 1 to N with one element missing, the missing number is to be found.
+import java.util.Scanner;
+
+class Missing{
+    public static void main(String[]args){
+        System.out.println("enter the array");
+        int i,n;
+       int a[]=new int[20];
+     Scanner sc= new Scanner (System.in);
+         for( i=0;i<a.length-1;i++){
+             
+            a[i]=sc.nextInt();
+            n=a[i]+1;
+            if(a[i]+1!=a[i+2]-1){
+            
+} System.out.println(n);
+          
+         }
+   
+    }}
